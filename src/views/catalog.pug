@@ -1,0 +1,963 @@
+extends ../components/layout
+
+block content
+
+  header.header.yolo-header-style-10
+    .yolo-top-bar
+      .container
+        .row
+          .top-sidebar.top-bar-left.col-md-4
+            aside#text-11.widget.widget_text
+              .textwidget
+                div Welcome to BeGreen - Best Plant
+          .top-sidebar.top-bar-right.col-md-8
+            aside#text-6.widget.widget_text
+              .textwidget
+                i.fa.fa-home
+                |  69 North Cleveland, Memphis 
+                i.fa.fa-phone(style='margin-left: 15px')
+                |  + 46 234-623-213
+                i.fa.fa-clock-o(style='margin-left: 15px')
+                |  Mon - Fri: 9.00am - 8.00pm
+    .mobile-menu
+      .col-3.text-left
+        a(href='#primary-menu')
+          i.fa.fa-bars
+      .col-3.text-center
+        .logo
+          h1
+            a(href='index.html')
+              img(src='images/logo/logo.png' alt='logo')
+      .col-3.text-right
+        .header-right
+          .search-button-wrapper.header-customize-item.style-default
+            .icon-search-menu
+              i.wicon.fa.fa-search
+            .yolo-search-wrapper
+              input#search-ajax(placeholder='Enter keyword to search' type='search')
+              button.search
+                i.fa.fa-search
+              button.close
+                i.pe-7s-close
+          .shopping-cart-wrapper.header-customize-item.with-price
+            .widget_shopping_cart_content
+              .widget_shopping_cart_icon
+                i.wicon.fa.fa-shopping-bag
+                span.total 0
+              .cart_list_wrapper
+                .scroll-wrapper.cart_list.product_list_widget.scrollbar-inner
+                  ul.cart_list.product_list_widget.scrollbar-inner.scroll-content
+                    li.empty
+                      h4 An empty cart
+                      p You have no item in your shopping cart
+    .header-logo
+      h1
+        a(href='index.html')
+          img(src='images/logo/logo.png' alt='logo')
+    .header-bottom
+      .container
+        .main-nav-wrapper
+          .header-left
+            nav#primary-menu.main-nav
+              ul.nav
+                li.active.menu-item.menu-home
+                  a(href='index.html') Home
+                  ul.sub-menu
+                    li.menu-item
+                      a(href='index.html') Homepage Demos
+                      ul.sub-menu
+                        li.menu-item
+                          a(href='index.html') Main Home
+                        li.menu-item
+                          a(href='home-2.html') Planter Shop Home
+                        li.menu-item
+                          a(href='home-3.html') Green Shop Home
+                        li.menu-item
+                          a(href='home-4.html') Tree Shop Home
+                    li.menu-item
+                      a(href='home-5.html') Homepage Demos
+                      ul.sub-menu
+                        li.menu-item
+                          a(href='home-5.html') Business Home
+                        li.menu-item
+                          a(href='home-6.html') Service Home
+                        li.menu-item
+                          a(href='home-7.html') Creative Agency Home
+                        li.menu-item
+                          a(href='home-8.html') Planter Agency Home
+                    li.menu-item
+                      a(href='home-9.html') Homepage Demos
+                      ul.sub-menu
+                        li.menu-item
+                          a(href='home-9.html') Personal Home
+                        li.menu-item
+                          a(href='home-10.html') Personal Artist Home
+                        li.menu-item
+                          a(href='home-11.html') Split Screen Home
+                        li.menu-item
+                          a(href='home-12.html') Blog Home
+                li.mega-menu.menu-item
+                  a(href='#') MegaMenu
+                  ul.sub-menu.sub-menu-mega
+                    li.sub-menu-mega-item
+                      a(href='#') What we do
+                      ul
+                        li
+                          figure
+                            img(src='images/demo/mega-1.jpg' alt='mega')
+                          a.name-mega(href='#') Easy care houseplants
+                          .infomation-mega
+                            span.author Admin
+                            span.time July 2016
+                            span.comment
+                              i.fa.fa-comments-o
+                              | 0
+                        li
+                          figure
+                            img(src='images/demo/mega-2.jpg' alt='mega')
+                          a.name-mega(href='#') Plaited Planter Tutorial Fall For DIY
+                          .infomation-mega
+                            span.author Admin
+                            span.time July 2016
+                            span.comment
+                              i.fa.fa-comments-o
+                              | 0
+                        li
+                          figure
+                            img(src='images/demo/mega-3.jpg' alt='mega')
+                          a.name-mega(href='#') These Plant Pots Make From Upcycled Ceramic
+                          .infomation-mega
+                            span.author Admin
+                            span.time July 2016
+                            span.comment
+                              i.fa.fa-comments-o
+                              | 0
+                        li
+                          figure
+                            img(src='images/demo/mega-4.jpg' alt='mega')
+                          a.name-mega(href='#') Plants Of The Month: Sanseivier
+                          .infomation-mega
+                            span.author Admin
+                            span.time July 2016
+                            span.comment
+                              i.fa.fa-comments-o
+                              | 0
+                    li.sub-menu-mega-item.active-menu
+                      a(href='#') Our latest work
+                      ul
+                        li
+                          figure
+                            img(src='images/demo/mega-1.jpg' alt='mega')
+                          a.name-mega(href='#') Easy care houseplants
+                          .infomation-mega
+                            span.author Admin
+                            span.time July 2016
+                            span.comment
+                              i.fa.fa-comments-o
+                              | 0
+                        li
+                          figure
+                            img(src='images/demo/mega-2.jpg' alt='mega')
+                          a.name-mega(href='#') Plaited Planter Tutorial Fall For DIY
+                          .infomation-mega
+                            span.author Admin
+                            span.time July 2016
+                            span.comment
+                              i.fa.fa-comments-o
+                              | 0
+                        li
+                          figure
+                            img(src='images/demo/mega-3.jpg' alt='mega')
+                          a.name-mega(href='#') These Plant Pots Make From Upcycled Ceramic
+                          .infomation-mega
+                            span.author Admin
+                            span.time July 2016
+                            span.comment
+                              i.fa.fa-comments-o
+                              | 0
+                        li
+                          figure
+                            img(src='images/demo/mega-4.jpg' alt='mega')
+                          a.name-mega(href='#') Plants Of The Month: Sanseivier
+                          .infomation-mega
+                            span.author Admin
+                            span.time July 2016
+                            span.comment
+                              i.fa.fa-comments-o
+                              | 0
+                    li.sub-menu-mega-item.sale-off-mega-menu
+                      a(href='#') Sale OFF Products
+                      ul
+                        li
+                          a(href='#') Featured Products
+                          ul
+                            li
+                              a(href='#')
+                                img(src='images/demo/mega-5.jpg' alt='mg-' width='85' height='100')
+                              p.mega-right
+                                span.product-title Hay Flowerpot With Saucer Huset
+                                span.price $80.00&ndash;$100.00
+                            li
+                              a(href='#')
+                                img(src='images/demo/mega-6.jpg' alt='mg-' width='85' height='100')
+                              p.mega-right
+                                span.product-title Cactus Shaped Eraser
+                                span.price $32.00
+                        li
+                          a(href='#') Products
+                          ul
+                            li
+                              a(href='#')
+                                img(src='images/demo/mega-7.jpg' alt='mg-' width='85' height='100')
+                              p.mega-right
+                                span.product-title Hay Flowerpot With Saucer Huset
+                                span.price $80.00&ndash;$100.00
+                            li
+                              a(href='#')
+                                img(src='images/demo/mega-5.jpg' alt='mg-' width='85' height='100')
+                              p.mega-right
+                                span.product-title Unicorn Glitter Socks
+                                span.price $40.00
+                        li
+                          a(href='#') Products Tags
+                          .tagcloud
+                            a.tag-link.tag-link-position-1(href='#') Beautiful
+                            a.tag-link.tag-link-position-2(href='#') Cactus
+                            a.tag-link.tag-link-position-3(href='#') Featured
+                            a.tag-link.tag-link-position-4(href='#') Indoor
+                            a.tag-link.tag-link-position-5(href='#') Outdoor
+                            a.tag-link.tag-link-position-6(href='#') Tree
+                li.menu-item.menu-blog
+                  a(href='#') Services
+                  ul.sub-menu
+                    li
+                      a(href='service.html') Main Services
+                    li
+                      a(href='why-choose-us.html') Why Choose Us
+                    li
+                      a(href='service-detail.html') Service Details
+                li.menu-item.menu-project
+                  a(href='project-4-columns-portrait.html') Project
+                  ul.sub-menu
+                    li.menu_style_dropdown.menu-item
+                      a(href='#') Classic layout
+                      ul.sub-menu
+                        li.menu-item.menu-item-object-page
+                          a(href='project-4-columns-portrait.html') 4 Columns Portrait
+                        li.menu-item.menu-item-object-page
+                          a(href='project-4-columns-landscape.html') 4 Columns Landscape
+                        li.menu-item.menu-item-object-page
+                          a(href='project-4-columns-squared.html') 4 Columns Squared
+                        li.menu-item.menu-item-object-page
+                          a(href='project-4-columns-full-width.html') Fullwidth
+                    li.menu_style_dropdown.menu-item
+                      a(href='#') Masonry layout
+                      ul.sub-menu
+                        li.menu-item.menu-item-object-page
+                          a(href='project-masonry-no-padding.html') Masonsy no padding
+                        li.menu-item.menu-item-object-page
+                          a(href='project-masonry-with-padding.html') Masonsy with padding
+                        li.menu-item.menu-item-object-page
+                          a(href='project-portlio-packery.html') Porfolio packery
+                    li.menu_style_dropdown.menu-item
+                      a(href='project-single.html') Single item
+                      ul.sub-menu
+                        li.menu-item.menu-item-object-page
+                          a(href='project-single.html') Single Image
+                        li.menu-item.menu-item-object-page
+                          a(href='project-single-gallery.html') Single Gallery
+                        li.menu-item.menu-item-object-page
+                          a(href='project-sidebar.html') Single Vertical Sidebar
+                    li.menu_style_dropdown.menu-item
+                      a(href='project-top-title.html') Title box layout
+                      ul.sub-menu
+                        li.menu-item.menu-item-object-page
+                          a(href='project-none.html') None   
+                        li.menu-item.menu-item-object-page
+                          a(href='project-top-title.html') Top title
+                        li.menu-item.menu-item-object-page
+                          a(href='project-bottom-title.html') Bottom title
+                li.menu-item.menu-shop
+                  a(href='product-shop.html') Shop
+                  ul.sub-menu
+                    li.menu_style_dropdown.menu-item
+                      a(href='#') Products Listing
+                      ul.sub-menu
+                        li.menu-item.menu-item-object-page
+                          a(href='products-grid-4-columns.html') Products Grid 4 Columns
+                        li.menu-item.menu-item-object-page
+                          a(href='products-grid-3-columns.html') Products Grid 3 Columns
+                        li.menu-item.menu-item-object-page
+                          a(href='products-grid-3-columns-width-sidebar.html') Products 3 Columns with Sidebar
+                        li.menu-item.menu-item-object-page
+                          a(href='products-grid-2-columns-width-sidebar.html') Products 2 Columns with Sidebar
+                        li.menu-item.menu-item-object-page
+                          a(href='products-list.html') Product List
+                    li.menu_style_dropdown.menu-item
+                      a(href='product-shop.html') Products Types
+                      ul.sub-menu
+                        li.menu-item.menu-item-object-page
+                          a(href='product-single.html') Simple Product
+                        li.menu-item.menu-item-object-page
+                          a(href='product-available.html') Variable Product
+                        li.menu-item.menu-item-object-page
+                          a(href='product-out-of-stock.html') Out Of Stock Product
+                        li.menu-item.menu-item-object-page
+                          a(href='product-group.html') Grouped Product
+                        li.menu-item.menu-item-object-page
+                          a(href='product-affiliate-external.html') Affiliate/ External Product
+                    li.menu_style_dropdown.menu-item
+                      a(href='product-shop.html') Woo Pages
+                      ul.sub-menu
+                        li.menu-item.menu-item-object-page
+                          a(href='product-cart.html') Cart
+                        li.menu-item.menu-item-object-page
+                          a(href='product-check-out.html') Checkout
+                        li.menu-item.menu-item-object-page
+                          a(href='product-my-acount.html') My Account
+                        li.menu-item.menu-item-object-page
+                          a(href='product-wishlist.html') Wishlist
+                li.menu-item.menu-blog
+                  a(href='#') Blog
+                  ul.sub-menu
+                    li
+                      a(href='blog-masonry.html') Blog Masonry
+                    li
+                      a(href='blog-2-columns-with-sidebar.html') Blog 2 Columns with Sidebar
+                    li
+                      a(href='blog-list.html') Blog List
+                    li
+                      a(href='blog-detail.html') Blog Details
+                li.menu-item.menu-blog
+                  a(href='#') Page
+                  ul.sub-menu
+                    li
+                      a(href='about-us.html') About Us
+                    li
+                      a(href='contact-us.html') Contact Us
+                    li
+                      a(href='book-service.html') Book Service
+                    li
+                      a(href='page-404.html') 404 Page
+            // .header-main-nav
+          .header-right
+            .search-button-wrapper.header-customize-item.style-default
+              .icon-search-menu
+                i.wicon.fa.fa-search
+              .yolo-search-wrapper
+                input(placeholder='Enter keyword to search' type='search')
+                button.search
+                  i.fa.fa-search
+                button.close
+                  i.pe-7s-close
+            .shopping-cart-wrapper.header-customize-item.with-price
+              .widget_shopping_cart_content
+                .widget_shopping_cart_icon
+                  i.wicon.fa.fa-shopping-bag
+                  span.total 0
+                .cart_list_wrapper
+                  .scroll-wrapper.cart_list.product_list_widget.scrollbar-inner
+                    ul.cart_list.product_list_widget.scrollbar-inner.scroll-content
+                      li.empty
+                        h4 An empty cart
+                        p You have no item in your shopping cart
+            .header-customize-item.canvas-menu-toggle-wrapper
+            .canvas-menu-toggle
+              i.fa.fa-align-right
+    nav.yolo-canvas-menu-wrapper.dark.ps-container
+      a.yolo-canvas-menu-close(href='#')
+        i.fa.fa-close
+      .yolo-canvas-menu-inner.sidebar
+        aside#text-12.widget.widget_text
+          .textwidget
+            .begreen-widget.ad-spot.text-center
+              .about-image
+                img(src='images/demo/off-menu.png' alt='demo')
+              h2.name_author Be Green
+              .about-description.text-center
+                | I love life and the unique position of being a working artist. I love the thrill of the hunt and am an avid vintage hound, sniffing out the best one-of-a-kinds.
+        aside#text-13.widget.widget_text
+          .textwidget
+            a(href='#')
+              img(src='images/demo/bn-bs.jpg' alt='demo')
+        aside#yolo-social-profile-6.widget.widget-social-profile
+          ul.social-profile.social-icon-bordered
+            li
+              a(title='Facebook' href='#' target='_blank')
+                i.fa.fa-facebook
+                | Facebook
+            li
+              a(title='Twitter' href='#' target='_blank')
+                i.fa.fa-twitter
+                | Twitter
+            li
+              a(title='Skype' href='#' target='_blank')
+                i.fa.fa-skype
+                | Skype
+            li
+              a(title='Youtube' href='#' target='_blank')
+                i.fa.fa-youtube
+                | Youtube
+  #example-wrapper
+    .div-box
+      .banner-subpage
+        figure
+          img(src='images/background/bg-banner.jpg' alt='bg-banner')
+        .banner-subpage-content
+          h2 Shop
+          .desc
+            p Home 
+            p Shop 
+    .div-box.mb
+      .container
+        .big-demo.go-wide(data-js-module='filtering-demo')
+          .ul-list-shop.mt
+            .filter-button-group.button-group.js-radio-button-group.container
+              button.button.is-checked(data-filter='*') All
+              button.button(data-filter='.featured') Featured
+              button.button(data-filter='.indoor') Indoor
+              button.button(data-filter='.new') New
+              button.button(data-filter='.outdoor') Outdoor
+              button.button(data-filter='.pots') Pots
+              button.button(data-filter='.seeds') Seeds
+            ul.sidebar-shop
+              li.click-toggle-sidebar-filter.click-toggle-sidebar Filter
+              li.click-toggle-sidebar-search.click-toggle-sidebar  Search
+          .sidebar-shop-search.toggle-sidebar-shop.mb-20.dib-none
+            form
+              input(type='text' placeholder='Search product')
+              a(href='#')
+                i.fa.fa-search
+          .sidebar-shop-col.toggle-sidebar-shop.mb-20.dib-none
+            .sidebar-product-style-2
+              .row
+                .col-md-3
+                  aside.sort-by
+                    h4.mb-20 Sort By
+                    ul
+                      li Default
+                      li
+                        a(href='#') Popularity
+                      li
+                        a(href='#') Average rating
+                      li
+                        a(href='#') Newness
+                      li
+                        a(href='#') Price: Low to High
+                      li
+                        a(href='#') Price: High to Low
+                .col-md-3
+                  aside.sort-by
+                    h4.mb-20 Filter by price
+                    ul.categories
+                      li All
+                      li
+                        a(href='#') $0.00 - $50.00
+                      li
+                        a(href='#') $50.00 - $100.00
+                      li
+                        a(href='#') $100.00 - $150.00
+                      li
+                        a(href='#') $150.00 - $200.00
+                      li
+                        a(href='#') $200.00 - $250.00
+                      li
+                        a(href='#') $250.00 - $300.00
+                      li
+                        a(href='#') $300.00 - $350.00
+                      li
+                        a(href='#') $350.00 - $400.00
+                      li
+                        a(href='#') $400.00+
+                .col-md-3
+                  aside.categorie
+                    h4.mb-20 Product Categories
+                    ul.categories
+                      li
+                        a(href='#') Chair
+                      li
+                        a(href='#') Decoration
+                      li
+                        a(href='#') Essential
+                      li
+                        a(href='#') Lamp
+                      li
+                        a(href='#') Sofas
+                .col-md-3
+                  aside.tagcloud
+                    h4.mb-20 tags
+                    ul.tagcloud
+                      li
+                        a(href='#') Bag
+                      li
+                        a(href='#') Comb
+                      li
+                        a(href='#') Chair
+                      li
+                        a(href='#') Classic
+                      li
+                        a(href='#') Desk
+                      li
+                        a(href='#') Gel
+                      li
+                        a(href='#') Lamp
+                      li
+                        a(href='#') Glass
+                      li
+                        a(href='#') Office
+                      li
+                        a(href='#') Table Tiles
+                      li
+                        a(href='#') Socks
+          ul.grid.shortcode-product-wrap.product-begreen.columns-3
+            li.element-item.product-item-wrap.product-style_1.featured.indoor.new.seeds(data-category='outdoor')
+              .product-item-inner
+                .product-thumb
+                  .product-flash-wrap
+                  .product-thumb-primary
+                    img.attachment-shop_catalog.size-shop_catalog.wp-post-image(src='images/demo/product-1.jpg' alt='product1' width='375' height='450')
+                  a.product-link(href='#')
+                    .product-hover-sign
+                      hr
+                      hr
+                  .product-info
+                    .star-rating
+                      i.fa.fa-star
+                      i.fa.fa-star
+                      i.fa.fa-star
+                      i.fa.fa-star
+                      i.fa.fa-star-o
+                    a(href='#')
+                      h3 The Hot Holiday Naked Cactus
+                    span.price
+                      span.product-begreen-price-amount.amount
+                        span.product-begreen-price-currencysymbol $
+                        | 55.00
+                  .product-actions
+                    .yith-wcwl-add-to-wishlist.add-to-wishlist-17
+                      .yith-wcwl-add-button.show
+                        a.add_to_wishlist(href='#')
+                          i.fa.fa-heart-o
+                          |  Add to Wishlist
+                    .add-to-cart-wrap
+                      a.add_to_cart_button(href='#')
+                        i.fa.fa-cart-plus
+                        |  Add to cart
+                    a.product-quick-view(href='#')
+                      i.fa.fa-search
+                      | Quick view
+            li.element-item.product-item-wrap.product-style_1.indoor.outdoor.pots.seeds(data-category='pots')
+              .product-item-inner
+                .product-thumb
+                  .product-flash-wrap
+                  .product-thumb-primary
+                    img.attachment-shop_catalog.size-shop_catalog.wp-post-image(src='images/demo/product-2.jpg' alt='product1' width='375' height='450')
+                  a.product-link(href='#')
+                    .product-hover-sign
+                      hr
+                      hr
+                  .product-info
+                    .star-rating
+                      i.fa.fa-star
+                      i.fa.fa-star
+                      i.fa.fa-star
+                      i.fa.fa-star
+                      i.fa.fa-star-o
+                    a(href='#')
+                      h3 Cactus quaerat volupta
+                    span.price
+                      span.product-begreen-price-amount.amount
+                        span.product-begreen-price-currencysymbol $
+                        | 40.00
+                  .product-actions
+                    .yith-wcwl-add-to-wishlist.add-to-wishlist-17
+                      .yith-wcwl-add-button.show
+                        a.add_to_wishlist(href='#')
+                          i.fa.fa-heart-o
+                          |  Add to Wishlist
+                    .add-to-cart-wrap
+                      a.add_to_cart_button(href='#')
+                        i.fa.fa-cart-plus
+                        |  Add to cart
+                    a.product-quick-view(href='#')
+                      i.fa.fa-search
+                      | Quick view
+            li.element-item.product-item-wrap.product-style_1.featured.indoor.pots(data-category='seeds')
+              .product-item-inner
+                .product-thumb
+                  .product-flash-wrap
+                  .product-thumb-primary
+                    img.attachment-shop_catalog.size-shop_catalog.wp-post-image(src='images/demo/product-3.jpg' alt='product1' width='375' height='450')
+                  a.product-link(href='#')
+                    .product-hover-sign
+                      hr
+                      hr
+                  .product-info
+                    .star-rating
+                      i.fa.fa-star
+                      i.fa.fa-star
+                      i.fa.fa-star
+                      i.fa.fa-star-o
+                      i.fa.fa-star-o
+                    a(href='#')
+                      h3 The Tall Terrarium Plant
+                    span.price
+                      span.product-begreen-price-amount.amount
+                        span.product-begreen-price-currencysymbol $
+                        | 52.00
+                  .product-actions
+                    .yith-wcwl-add-to-wishlist.add-to-wishlist-17
+                      .yith-wcwl-add-button.show
+                        a.add_to_wishlist(href='#')
+                          i.fa.fa-heart-o
+                          |  Add to Wishlist
+                    .add-to-cart-wrap
+                      a.add_to_cart_button(href='#')
+                        i.fa.fa-cart-plus
+                        |  Add to cart
+                    a.product-quick-view(href='#')
+                      i.fa.fa-search
+                      | Quick view
+            li.element-item.product-item-wrap.product-style_1.indoor.new.pots(data-category='outdoor')
+              .product-item-inner
+                .product-thumb
+                  .product-flash-wrap
+                    span.on-new.product-flash New
+                  .product-thumb-primary
+                    img.attachment-shop_catalog.size-shop_catalog.wp-post-image(src='images/demo/product-4.jpg' alt='product1' width='375' height='450')
+                  a.product-link(href='#')
+                    .product-hover-sign
+                      hr
+                      hr
+                  .product-info
+                    .star-rating
+                      i.fa.fa-star
+                      i.fa.fa-star
+                      i.fa.fa-star
+                      i.fa.fa-star
+                      i.fa.fa-star-o
+                    a(href='#')
+                      h3 The Calvert with Light Plants
+                    span.price
+                      span.product-begreen-price-amount.amount
+                        span.product-begreen-price-currencysymbol $
+                        | 42.00
+                  .product-actions
+                    .yith-wcwl-add-to-wishlist.add-to-wishlist-17
+                      .yith-wcwl-add-button.show
+                        a.add_to_wishlist(href='#')
+                          i.fa.fa-heart-o
+                          |  Add to Wishlist
+                    .add-to-cart-wrap
+                      a.add_to_cart_button(href='#')
+                        i.fa.fa-cart-plus
+                        |  Add to cart
+                    a.product-quick-view(href='#')
+                      i.fa.fa-search
+                      | Quick view
+            li.element-item.product-item-wrap.product-style_1.featured.pots.seeds(data-category='pots')
+              .product-item-inner
+                .product-thumb
+                  .product-flash-wrap
+                  .product-thumb-primary
+                    img.attachment-shop_catalog.size-shop_catalog.wp-post-image(src='images/demo/product-5.jpg' alt='product1' width='375' height='450')
+                  a.product-link(href='#')
+                    .product-hover-sign
+                      hr
+                      hr
+                  .product-info
+                    .star-rating
+                      i.fa.fa-star
+                      i.fa.fa-star
+                      i.fa.fa-star
+                      i.fa.fa-star
+                      i.fa.fa-star-o
+                    a(href='#')
+                      h3 The Calvert with Succulents
+                    span.price
+                      span.product-begreen-price-amount.amount
+                        span.product-begreen-price-currencysymbol $
+                        | 33.00
+                  .product-actions
+                    .yith-wcwl-add-to-wishlist.add-to-wishlist-17
+                      .yith-wcwl-add-button.show
+                        a.add_to_wishlist(href='#')
+                          i.fa.fa-heart-o
+                          |  Add to Wishlist
+                    .add-to-cart-wrap
+                      a.add_to_cart_button(href='#')
+                        i.fa.fa-cart-plus
+                        |  Add to cart
+                    a.product-quick-view(href='#')
+                      i.fa.fa-search
+                      | Quick view
+            li.element-item.product-item-wrap.product-style_1.indoor.outdoor.pots(data-category='indoor')
+              .product-item-inner
+                .product-thumb
+                  .product-flash-wrap
+                  .product-thumb-primary
+                    img.attachment-shop_catalog.size-shop_catalog.wp-post-image(src='images/demo/product-6.jpg' alt='product1' width='375' height='450')
+                  a.product-link(href='#')
+                    .product-hover-sign
+                      hr
+                      hr
+                  .product-info
+                    .star-rating
+                      i.fa.fa-star
+                      i.fa.fa-star
+                      i.fa.fa-star
+                      i.fa.fa-star
+                      i.fa.fa-star-o
+                    a(href='#')
+                      h3 The Succulent Collection
+                    span.price
+                      span.product-begreen-price-amount.amount
+                        span.product-begreen-price-currencysymbol $
+                        | 44.00
+                  .product-actions
+                    .yith-wcwl-add-to-wishlist.add-to-wishlist-17
+                      .yith-wcwl-add-button.show
+                        a.add_to_wishlist(href='#')
+                          i.fa.fa-heart-o
+                          |  Add to Wishlist
+                    .add-to-cart-wrap
+                      a.add_to_cart_button(href='#')
+                        i.fa.fa-cart-plus
+                        |  Add to cart
+                    a.product-quick-view(href='#')
+                      i.fa.fa-search
+                      | Quick view
+            li.element-item.product-item-wrap.product-style_1.outdoor.pots(data-category='seeds')
+              .product-item-inner
+                .product-thumb
+                  .product-flash-wrap
+                    span.on-new.product-flash 18.56%
+                  .product-thumb-primary
+                    img.attachment-shop_catalog.size-shop_catalog.wp-post-image(src='images/demo/product-7.jpg' alt='product1' width='375' height='450')
+                  a.product-link(href='#')
+                    .product-hover-sign
+                      hr
+                      hr
+                  .product-info
+                    .star-rating
+                      i.fa.fa-star
+                      i.fa.fa-star
+                      i.fa.fa-star
+                      i.fa.fa-star-o
+                      i.fa.fa-star-o
+                      i.fa.fa-star-o
+                    a(href='#')
+                      h3 The Ezra with Low Light Plants
+                    span.price
+                      del
+                        span.product-begreen-price-amount.amount
+                          span.product-begreen-price-currencysymbol $
+                          | 49.00
+                      ins
+                        span.product-begreen-price-amount.amount
+                          span.product-begreen-price-currencysymbol $
+                          | 40.00
+                  .product-actions
+                    .yith-wcwl-add-to-wishlist.add-to-wishlist-17
+                      .yith-wcwl-add-button.show
+                        a.add_to_wishlist(href='#')
+                          i.fa.fa-heart-o
+                          |  Add to Wishlist
+                    .add-to-cart-wrap
+                      a.add_to_cart_button(href='#')
+                        i.fa.fa-cart-plus
+                        |  Add to cart
+                    a.product-quick-view(href='#')
+                      i.fa.fa-search
+                      | Quick view
+            li.element-item.product-item-wrap.product-style_1.indoor.featured(data-category='indoor')
+              .product-item-inner
+                .product-thumb
+                  .product-flash-wrap
+                    span.on-new.product-flash Sold
+                  .product-thumb-primary
+                    img.attachment-shop_catalog.size-shop_catalog.wp-post-image(src='images/demo/product-8.jpg' alt='product1' width='375' height='450')
+                  a.product-link(href='#')
+                    .product-hover-sign
+                      hr
+                      hr
+                  .product-info
+                    .star-rating
+                      i.fa.fa-star
+                      i.fa.fa-star
+                      i.fa.fa-star
+                      i.fa.fa-star
+                      i.fa.fa-star-o
+                    a(href='#')
+                      h3 The Tall Terrarium Plant Collection
+                    span.price
+                      span.product-begreen-price-amount.amount
+                        span.product-begreen-price-currencysymbol $
+                        | 40.00
+                  .product-actions
+                    .yith-wcwl-add-to-wishlist.add-to-wishlist-17
+                      .yith-wcwl-add-button.show
+                        a.add_to_wishlist(href='#')
+                          i.fa.fa-heart-o
+                          |  Add to Wishlist
+                    .add-to-cart-wrap
+                      a.add_to_cart_button(href='#')
+                        i.fa.fa-cart-plus
+                        |  Add to cart
+                    a.product-quick-view(href='#')
+                      i.fa.fa-search
+                      | Quick view
+            li.element-item.product-item-wrap.product-style_1.featured.pots.seeds(data-category='pots')
+              .product-item-inner
+                .product-thumb
+                  .product-flash-wrap
+                  .product-thumb-primary
+                    img.attachment-shop_catalog.size-shop_catalog.wp-post-image(src='images/demo/product-9.jpg' alt='product1' width='375' height='450')
+                  a.product-link(href='#')
+                    .product-hover-sign
+                      hr
+                      hr
+                  .product-info
+                    .star-rating
+                      i.fa.fa-star
+                      i.fa.fa-star
+                      i.fa.fa-star
+                      i.fa.fa-star
+                      i.fa.fa-star-o
+                    a(href='#')
+                      h3 The Calvert with Succulents
+                    span.price
+                      span.product-begreen-price-amount.amount
+                        span.product-begreen-price-currencysymbol $
+                        | 33.00
+                  .product-actions
+                    .yith-wcwl-add-to-wishlist.add-to-wishlist-17
+                      .yith-wcwl-add-button.show
+                        a.add_to_wishlist(href='#')
+                          i.fa.fa-heart-o
+                          |  Add to Wishlist
+                    .add-to-cart-wrap
+                      a.add_to_cart_button(href='#')
+                        i.fa.fa-cart-plus
+                        |  Add to cart
+                    a.product-quick-view(href='#')
+                      i.fa.fa-search
+                      | Quick view
+            li.element-item.product-item-wrap.product-style_1.indoor.outdoor.pots(data-category='indoor')
+              .product-item-inner
+                .product-thumb
+                  .product-flash-wrap
+                  .product-thumb-primary
+                    img.attachment-shop_catalog.size-shop_catalog.wp-post-image(src='images/demo/product-10.jpg' alt='product1' width='375' height='450')
+                  a.product-link(href='#')
+                    .product-hover-sign
+                      hr
+                      hr
+                  .product-info
+                    .star-rating
+                      i.fa.fa-star
+                      i.fa.fa-star
+                      i.fa.fa-star
+                      i.fa.fa-star
+                      i.fa.fa-star-o
+                    a(href='#')
+                      h3 The Succulent Collection
+                    span.price
+                      span.product-begreen-price-amount.amount
+                        span.product-begreen-price-currencysymbol $
+                        | 44.00
+                  .product-actions
+                    .yith-wcwl-add-to-wishlist.add-to-wishlist-17
+                      .yith-wcwl-add-button.show
+                        a.add_to_wishlist(href='#')
+                          i.fa.fa-heart-o
+                          |  Add to Wishlist
+                    .add-to-cart-wrap
+                      a.add_to_cart_button(href='#')
+                        i.fa.fa-cart-plus
+                        |  Add to cart
+                    a.product-quick-view(href='#')
+                      i.fa.fa-search
+                      | Quick view
+            li.element-item.product-item-wrap.product-style_1.outdoor.pots(data-category='seeds')
+              .product-item-inner
+                .product-thumb
+                  .product-flash-wrap
+                    span.on-new.product-flash 18.56%
+                  .product-thumb-primary
+                    img.attachment-shop_catalog.size-shop_catalog.wp-post-image(src='images/demo/product-11.jpg' alt='product1' width='375' height='450')
+                  a.product-link(href='#')
+                    .product-hover-sign
+                      hr
+                      hr
+                  .product-info
+                    .star-rating
+                      i.fa.fa-star
+                      i.fa.fa-star
+                      i.fa.fa-star
+                      i.fa.fa-star-o
+                      i.fa.fa-star-o
+                      i.fa.fa-star-o
+                    a(href='#')
+                      h3 The Ezra with Low Light Plants
+                    span.price
+                      del
+                        span.product-begreen-price-amount.amount
+                          span.product-begreen-price-currencysymbol $
+                          | 49.00
+                      ins
+                        span.product-begreen-price-amount.amount
+                          span.product-begreen-price-currencysymbol $
+                          | 40.00
+                  .product-actions
+                    .yith-wcwl-add-to-wishlist.add-to-wishlist-17
+                      .yith-wcwl-add-button.show
+                        a.add_to_wishlist(href='#')
+                          i.fa.fa-heart-o
+                          |  Add to Wishlist
+                    .add-to-cart-wrap
+                      a.add_to_cart_button(href='#')
+                        i.fa.fa-cart-plus
+                        |  Add to cart
+                    a.product-quick-view(href='#')
+                      i.fa.fa-search
+                      | Quick view
+            li.element-item.product-item-wrap.product-style_1.indoor.featured(data-category='indoor')
+              .product-item-inner
+                .product-thumb
+                  .product-flash-wrap
+                    span.on-new.product-flash Sold
+                  .product-thumb-primary
+                    img.attachment-shop_catalog.size-shop_catalog.wp-post-image(src='images/demo/product-12.jpg' alt='product1' width='375' height='450')
+                  a.product-link(href='#')
+                    .product-hover-sign
+                      hr
+                      hr
+                  .product-info
+                    .star-rating
+                      i.fa.fa-star
+                      i.fa.fa-star
+                      i.fa.fa-star
+                      i.fa.fa-star
+                      i.fa.fa-star-o
+                    a(href='#')
+                      h3 The Tall Terrarium Plant Collection
+                    span.price
+                      span.product-begreen-price-amount.amount
+                        span.product-begreen-price-currencysymbol $
+                        | 40.00
+                  .product-actions
+                    .yith-wcwl-add-to-wishlist.add-to-wishlist-17
+                      .yith-wcwl-add-button.show
+                        a.add_to_wishlist(href='#')
+                          i.fa.fa-heart-o
+                          |  Add to Wishlist
+                    .add-to-cart-wrap
+                      a.add_to_cart_button(href='#')
+                        i.fa.fa-cart-plus
+                        |  Add to cart
+                    a.product-quick-view(href='#')
+                      i.fa.fa-search
+                      | Quick view
+        p.button-product.text-center.mt-20
+          a.btn.btn-15 Load more

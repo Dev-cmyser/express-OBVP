@@ -1,0 +1,28 @@
+mixin main-nav(activeRoute)
+  div(class="navbar-nav mr-auto")
+    a(
+      href="/"
+      class="nav-link",
+      class=`${activeRoute === "/" && "router-link-exact-active"}`
+    ) Home
+    a(
+      href="/promo"
+      class="nav-link",
+      class=`${activeRoute === "/promo" && "router-link-exact-active"}`
+    ) Promo
+    a(
+      href="/catalog"
+      class="nav-link",
+      class=`${activeRoute === "/catalog" && "router-link-exact-active"}`
+    ) Catalog
+    a(
+      href="/login"
+      class="nav-link",
+      class=`${activeRoute === "/login" && "router-link-exact-active"}`
+    ) Login
+    a(
+      href="/registration"
+      class="nav-link",
+      class=`${activeRoute === "/Registration" && "router-link-exact-active"}`
+    ) Registration
+    
