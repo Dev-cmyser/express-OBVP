@@ -30,6 +30,10 @@ app.get("/login", (req, res) => {
 app.get("/registration", (req, res) => {
   res.render("registration", { activeRoute: req.originalUrl });
 });
+app.get("/product1", (req, res) => {
+  res.render("product1", { activeRoute: req.originalUrl });
+});
+
 
 
 const port = "8080"
