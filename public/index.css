@@ -105,3 +105,24 @@ code {
     opacity: 1;
 }
 
+
+.centrer--m{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.mytext{
+    padding: 30px;
+    font-size: 33px;
+    color: black;
+}
+
+.mylink{
+    margin-top: 50px;
+    border: 1px solid black;
+    border-radius: 30px;
+}
